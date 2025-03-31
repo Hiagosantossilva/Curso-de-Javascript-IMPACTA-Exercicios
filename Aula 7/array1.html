@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var cores = new Array('vermelho', 'azul', 'verde', 'amarelo');
+        document.write(cores);
+        document.write("<br>");
+        document.write(typeof cores);
+        document.write("<br>");
+        document.write(cores.length);
+        document.write("<br>");
+        document.write(cores[1]);
+        document.write("<hr>");
+        for(i=0;i<4;i++){
+            document.write(cores[i]);
+            document.write("<br>");
+        }
+        var mensagem = '';
+        function ler(elemento,indice, objeto){
+            mensagem +=objeto+"["+indice+"]="+elemento+"\n"
+        }
+        cores.forEach(ler);
+        alert(mensagem)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

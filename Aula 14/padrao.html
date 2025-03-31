@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            document.getElementById('botao').onclick = function()
+            {
+                //document.getElementById('titulo').innerHTML="Impacta Cursos onLine!"
+                //alert(document.getElementById('titulo').innerHTML)
+                //alert(document.getElementById('titulo').firstChild.nodeValue)
+                //alert(document.getElementById('titulo').childNodes[0].nodeValue)
+                document.getElementById('bueiro').setAttribute('src', "bueiros/b002.jpg")
+                
+                //document.getElementById('titulo').style.color ="#FF0000" 
+                //document.getElementById('titulo').style.border ="#FF0000 solid 1px"  
+                document.getElementById('titulo').setAttribute('style',"color:#FF0000;border: 1px solid #FF0000")
+            }
+                
+            
+        }
+    </script>
+</head>
+<body>
+    <h1 id="titulo">Titulo do artigo</h1>
+    <p id="texto">Texto para formatação</p>
+    <img id="bueiro" src="bueiros/b001.jpg">
+    <input type="button" name="botao" id="botao" value="Formatar!">
+</body>
+</html>

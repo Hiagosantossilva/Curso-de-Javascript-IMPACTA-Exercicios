@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function()
+        {
+            //dom2 - addEventListener('click', function(){}, false)
+            function documento(){
+                {
+                alert("Documento")
+                }
+            }
+            function dive(){
+                alert("Dive")
+            }   
+            function botao(){
+                alert("Botão")
+            }
+            document.addEventListener('click', documento, false)
+            document.getElementById('dive').addEventListener('click', dive, false)
+            document.getElementById('botao').addEventListener('click', botao, false)        }
+            function evento(evt){
+                var evento = evt ? evt : window.event
+            }
+    </script>
+</head>
+<body>
+    <div id="dive">
+        <p>
+            <input type="button" name="botao" id="botao" value="Propagação">
+        </p>
+        <p>
+            <input type="button" name="botao2" id="botao2" value="Não Propagação">    
+        </p>
+    </div>
+</body>
+</html>

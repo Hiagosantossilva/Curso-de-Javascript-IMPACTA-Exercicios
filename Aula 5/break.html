@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var parar = 5
+        var cont = 1
+        while(cont<=5){
+            document.write(cont+", ");
+            if(parar == cont){
+                break;
+            }
+            cont++;
+        }
+        document.write('<hr>');
+
+        var pular = 3
+        var conte = 1
+        while(conte<=5){
+            if(pular == conte){
+                conte++;
+                continue;
+            }
+            document.write(conte+", ");
+            conte++;
+        }
+    </script>
+</head>
+<body>
+    <hr>
+</body>
+</html>

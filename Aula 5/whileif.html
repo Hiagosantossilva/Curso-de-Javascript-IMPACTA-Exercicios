@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("<table>")
+        var cont = 1;
+
+        while(cont <= 20){
+            if(cont % 2==0){
+                cor="#CCC"
+            } else{
+                cor="#00000"
+            }
+            document.write('<tr><td style="background-color:'+cor+'">'+cont+'</td></tr>')
+            cont++;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
